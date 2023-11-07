@@ -1,0 +1,6 @@
+PLAN FOR PROJECT
+
+1. Correcting data (preprocessed MathQA)
+2. Use pre-trained model to predict expressions 
+3. Solve with model or wolfram API
+4. 
