@@ -25,11 +25,9 @@ def solve(inp, wa, container):
                 ui.separator()
                 ui.label('Input: ' + inp)
                 for images in get_imgs(inp) :
-                    ui.image(images).classes('w-96')
-                    #ui.image('https://www6b3.wolframalpha.com/Calculate/MSP/MSP30001h9ec521i502gd2800002b7f23ag77g3d859?MSPStoreType=image/gif&s=9').classes('w-96')
-
+                    i = ui.image(images).classes('w-96')
+                i.force_reload()
                 ui.separator()
-
     return
 
 def main():
@@ -37,9 +35,6 @@ def main():
                 
     Mathematical Word Problem Solving with NLP''')
     
-    #ANSWERS GO HERE
-    #ui.image('https://www6b3.wolframalpha.com/Calculate/MSP/MSP30001h9ec521i502gd2800002b7f23ag77g3d859?MSPStoreType=image/gif&s=9')
-
     with ui.row():
         input = ui.input('Text input')
         use_wa = ui.switch('Wolfram Alpha Computation')
